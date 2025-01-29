@@ -38,3 +38,29 @@ let stringNumber = String(someNumber)
 console.log(stringNumber);
 console.log(typeof stringNumber);
 
+// ************************************* Operations ***************************************
+
+// link to study
+// https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
+
+
+let value = 3
+let negValue = -value
+console.log(negValue);
+
+// console.log(2+4);
+// console.log(2-4);
+// console.log(2*4);
+// console.log(2**4);
+// console.log(2/4);
+// console.log(2%4);
+
+console.log(1 + "2");
+console.log("1" + 2);
+console.log("1" + 2 + 2);
+console.log(1 + 2 + "2");
+
+console.log(true);
+console.log(+true);
+console.log(+"");
+
