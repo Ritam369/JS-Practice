@@ -44,3 +44,5 @@ const myFunction = function(){  //function is declared in this way
     console.log("Hello World");
 }
 console.log(typeof myFunction); //o/p => object function
+
+// https://262.ecma-international.org/5.1/#sec-11.4.3
