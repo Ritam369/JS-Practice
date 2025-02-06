@@ -14,8 +14,24 @@ let myDate = new Date()
 
 let myCreatedDate1 = new Date(2024, 2, 8) //parameters - Year, Month(0 indexed format), date
 console.log(myCreatedDate1.toDateString());
+
 let myCreatedDate2 = new Date(2024, 2, 8, 21, 20) //parameters - year, month(0 indexed format), date, hours, minutes
 console.log(myCreatedDate2.toLocaleString());
+
 let myCreatedDate3 = new Date("2023-01-17") //jehetu given format YYYY-MM-DD toh taii 0-indexed month er concept ekhane lagbe nah
 console.log(myCreatedDate3.toLocaleString());
+
+let myCreatedDate4 = new Date("04-14-2023") //jehetu given format MM-DD-YYYY toh taii 0-indexed month er concept ekhane lagbe nah
+console.log(myCreatedDate4.toLocaleString());
+
+let myTimeStamp = Date.now()
+
+console.log(myTimeStamp); //millisecond value
+console.log(myCreatedDate1.getTime()); //millisecond value
+console.log(Math.round(Date.now()/1000)); //answer will be in seconds
+
+let newdate = new Date()
+console.log(newdate.getDay());
+console.log(newdate.getFullYear());
+console.log(newdate.getMonth() + 1); //jehetu month ta 0 indexed taii +1 korte holo
 
