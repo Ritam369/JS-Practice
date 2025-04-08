@@ -6,7 +6,7 @@
 
 let nameOne = "Ritam"
 let nameTwo = nameOne
-nameTwo = "Sneharika"
+nameTwo = "Rohit"
 console.log(nameOne);
 console.log(nameTwo);
 
@@ -17,7 +17,7 @@ let userOne ={
     email: "ritam@gmail.com"
 }
 let userTwo = userOne
-userTwo.email = "sneharika@gmail.com"
+userTwo.email = "rohit@gmail.com"
 
 console.log(userOne.email);
 console.log(userTwo.email);
