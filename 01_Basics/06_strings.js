@@ -4,10 +4,10 @@ const repoCount = 11
 console.log(greet + " World " + repoCount);//Backdated technique
 
 //Nowadays we use back-ticks instead of the previous (``)
-console.log(`${greet} World. Here's my Repo-count = ${repoCount}`); //Here comes string interpolation means here we use place-holder 
+console.log(`${greet} World. Here's my Repo-count = ${repoCount}`); //Here comes string interpolation means here we use place-holder in which the variables can directly inject their values.
 //This is same like formatted string that we use in python
 
-console.log(newName) //O/P--> [String: 'Ritam']
+console.log(newName) //O/P--> String: {'Ritam'}
 // First print this in browser console then come here
 // Here String is not an array, it's actually an object and 0: "R", 1: "i"...these are not index, these are actually key-value pairs!!
 
