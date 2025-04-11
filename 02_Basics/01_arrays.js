@@ -6,7 +6,7 @@ const newArr = new Array("Ritam", "Saha")
 console.log(myArr);
 console.log(newArr);
 
-// Array methods
+// Array methods::
 
 myArr.push(false) //to insert an element
 // console.log(myArr);
@@ -27,6 +27,8 @@ myArr.shift() //Array er first element ke delete kore debe
 const arr = myArr.join() //converts the array into string (comma sparated string elements)
 // console.log(arr);
 // console.log(typeof arr);
+
+//slice() and splice() methods
 
 console.log("A ", myArr);
 const myn1 = myArr.slice(1,3) //from starting index to the before index of given range and do not delete any element from the real array (just take the copy)
