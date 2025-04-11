@@ -17,8 +17,8 @@ myArr.pop() //to delete an element (LIFO)
 myArr.unshift(69) //Array etr elements guloke shift koriye parameter e given value ta array er surute dhukbe... parameter e joto value debo sobgulo sei order e array er surute dhukbe
 // console.log(myArr);
 
-myArr.shift()
-// console.log(myArr); //Array er first element ke delete kore debe
+myArr.shift() //Array er first element ke delete kore debe
+// console.log(myArr); 
 
 // console.log(myArr.includes(49));
 // console.log(myArr.indexOf(true));
