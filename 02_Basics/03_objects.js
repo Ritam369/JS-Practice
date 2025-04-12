@@ -2,9 +2,9 @@
 
 //Singleton--> made using constructor
 //Object.create()
+//Will be discussed in 2nd part.
 
-
-//object literals (Another way to declare objects)
+//object literals (Another way to declare objects) (Non-singleton object)
 const mySym = Symbol("key1") //here we are taking a symbol
 const jsUser = {
     userName : "Ritam", //Ebhabe dileo compiler asole etake dekhe ebhabe--> "name" : "Ritam", i.e. key taake o string hisabei neyy
