@@ -59,10 +59,49 @@ const obj4 = {...obj1,...obj2}
 
 
 //How to print only keys or only values of an object??
-console.log(Object.keys(user)); //It returns an array of the keys
-console.log(Object.values(user)); //It returns an array of the values
-console.log(Object.entries(user)); //It converts each key-value pair to an array and merge them within an new array
-console.log(Object.keys(user).length); //to find the length of the object
-console.log(user.hasOwnProperty("status"));
-console.log(user.hasOwnProperty("id"));
+// console.log(Object.keys(user)); //It returns an array of the keys
+// console.log(Object.values(user)); //It returns an array of the values
+// console.log(Object.entries(user)); //It converts each key-value pair to an array and merge them within an new array
+// console.log(Object.keys(user).length); //to find the length of the object
+// console.log(user.hasOwnProperty("status"));
+// console.log(user.hasOwnProperty("id"));
 //hasOwnProperty() is used to check whether the key is inside the object or not
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++ JSON and Object de-structure +++++++++++++++++++++++++++++++++
+
+const course = {
+    courseName : "JS in Hindi",
+    price : 399,
+    instrutor : "Hitesh Sir"
+}
+
+// course.instrutor //this the general process to access elements of an object
+// Another process is used to do the same which is more efficient known as object de-structure
+
+
+// const {instrutor} = course //key element should always be same
+// console.log(instrutor)
+//if I had to change the key name, then have to follow the following syntax
+
+const {instrutor : sir} = course
+console.log(sir);
+
+
+
+// APIs format
+
+// {
+//     "courseName" : "JS Hindi",
+//     "price" : 399,
+//     "isLoggedIn" : true
+// } //JSON format --> object but having no name
+
+
+//Another way to write APIs using array
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
