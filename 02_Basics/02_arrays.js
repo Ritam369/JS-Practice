@@ -13,7 +13,7 @@ const dc = ["superman", "batman", "flash"]
 // NOTE: push() method modifies the existing array but concat() method returns a new array
 
 
-// spread operator(...) (better & alternative method than concat())
+// spread operator(...) (better & alternative method than concat()) (spread operator returns a new array)
 const mightyHeroes = [...marvel,...dc] //this is better because it can merge more than two arrays within one new array
 console.log(mightyHeroes);
 
