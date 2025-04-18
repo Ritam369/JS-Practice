@@ -1,0 +1,72 @@
+How does Javascript executes code?? (JS Execution context)
+
+
+Code --> Global Execution Context(stored within 'this')(for browser, this generally stores windows-object) 
+                 |                                   (Executes within a thread means JS is single threaded)
+                 |
+                 |
+               \ | /
+        Functional Execution Context
+                 |
+                 |
+               \ | /
+        Eval Execution Context (Above twos are main, but some doccumentation(eg: mongoose docs) 
+                                also says that eval EC plays a significant role)
+
+
+When JS runs a code, it basically runs in 2 phases. These are-->
+(i) Memory 'Creation/Allocation phase' //In this phase, memory allocations would be done for the 
+    variables and for all the rest declarations.
+(ii) Execution phase
+
+
+So how a code execiutes??
+See the following steps-->
+
+Let, there's a sum code given-
+
+        let val1 = 10
+        let val2 = 5
+        function addTwo(num1,num2){
+            let total = num1+num2
+            return total
+        }
+        let result1 = addTwo(val1,val2)
+        let result2 = addTwo(10,3)
+
+
+    The steps are---->>
+
+    1. Global Execution/Enviroment (Allocated within 'this')
+    2. Memory creation phase
+        val1 -> undefined
+        val2 -> undefined
+        addTwo -> defination
+        result1 -> undefined
+        result2 -> undefined
+    3. Execution phase
+        val1 <- 10
+        val2 <- 5
+        addTwo -> Functional Execution context
+        return1 <- 15 (After return)
+        return2 <- ***line 67
+    4. Functional Execution context
+        New enviroment variables + execution thread, but also within this memory phase and execution
+        phase will be repeated due to the definition within local scope boundary.
+            1. Memory Phase
+                num1 -> undefined
+                num2 -> undefined
+                total -> undefined
+            2. Execution phase
+                 num1 <- 10
+                 num2 <- 5
+                 total <- 15 (total  would be returned to parent execution context i.e. global EC)
+       Note:: After the return, this EC will be deleted permanantly
+
+
+    ***For return2 new EC(4) will be created again, and then we will get the final value 
+
+
+
+Call Stack
+Use source within browser dev-tools and watch 25th video of the series from 20:50min!!
