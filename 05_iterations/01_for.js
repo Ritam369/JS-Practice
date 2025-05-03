@@ -16,3 +16,8 @@ for(let i=1; i<=10; i++){
         console.log(`${i} * ${j} = ${i*j}`)
     }
 }
+
+let myArray = ["Batman", "Superman", "Flash"]
+for (let i = 0; i < myArray.length; i++) {
+    console.log(myArray[i])
+}
