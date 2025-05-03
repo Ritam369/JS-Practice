@@ -2,7 +2,7 @@
 
 
 //Here's the way to make iife function
-//    ()()
+//    ()();
 // the first parentheses is for function definition means the whole function would be wrappd within parentheses
 // the second parentheses is for execution
 
