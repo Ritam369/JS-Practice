@@ -8,7 +8,7 @@
 // }
 
 
-let month = 3;
+let month = 5;
 
 switch (month) {
     case 1:
@@ -50,5 +50,4 @@ switch (month) {
 
     default:
         console.log("Wrong Input!!")
-        break;
 }
